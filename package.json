@@ -1,0 +1,45 @@
+{
+	"name": "react-native-elevate",
+	"version": "1.0.0",
+	"description": "Used in React Native to get the same drop shadow on both Android and iOS",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"format": "prettier --write \"src/**/*.ts\"",
+		"lint": "tslint -p tsconfig.json",
+		"prepare": "npm run build",
+		"prepublishOnly": "npm run lint",
+		"preversion": "npm run lint",
+		"version": "npm run format && git add -A",
+		"postversion": "git push && git push --tags"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MattiasMansson/react-native-elevate.git"
+	},
+	"files": [
+		"lib/**/*"
+	],
+	"keywords": [
+		"elevate",
+		"elevation",
+		"react-native",
+		"shadow"
+	],
+	"author": "Mattias Månsson",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/MattiasMansson/react-native-elevate/issues"
+	},
+	"homepage": "https://github.com/MattiasMansson/react-native-elevate#readme",
+	"devDependencies": {
+		"@types/react-native": "^0.60.19",
+		"prettier": "^1.18.2",
+		"react-native": "^0.61.2",
+		"react-native-typescript-transformer": "^1.2.13",
+		"tslint": "^5.20.0",
+		"tslint-config-prettier": "^1.18.0",
+		"typescript": "^3.6.3"
+	}
+}
