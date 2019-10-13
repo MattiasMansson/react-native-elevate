@@ -1,6 +1,6 @@
 {
 	"name": "react-native-elevate",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Used in React Native to get the same drop shadow on both Android and iOS",
 	"main": "lib/elevate.js",
 	"types": "lib/elevate.d.ts",
