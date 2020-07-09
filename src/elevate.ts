@@ -31,7 +31,7 @@ const iOSElevationShadows = [
 const getiOSElevationShadow = (index: number): ShadowStyleIOS => {
     const shadowDimensions = iOSElevationShadows[index]
         .split(' ')
-        .map(shadowValue => parseFloat(shadowValue));
+        .map((shadowValue) => parseFloat(shadowValue));
 
     return {
         shadowColor: '#000',
